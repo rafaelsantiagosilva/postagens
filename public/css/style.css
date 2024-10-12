@@ -26,6 +26,12 @@ h1 {
   gap: 10px;
 }
 
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 main {
   padding: 2rem;
   display: flex;
@@ -89,6 +95,9 @@ button:hover {
   padding: 1.5rem;
   width: 50dvw;
   max-width: 50dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .post-title {
@@ -103,9 +112,18 @@ button:hover {
 button.delete {
   background-color: #bb1212;
   font-size: 0.8rem;
-  margin-top: 10px;
 }
 
 button.delete:hover {
   background-color: #df1515;
+}
+
+button.update {
+  background-color: #808080;
+  font-size: 0.8rem;
+}
+
+button.update:hover {
+  background-color: #909090;
+  font-size: 0.8rem;
 }

@@ -1,0 +1,13 @@
+<form action="/update/{{id}}" method="post">
+  <label for="title">Título: </label>
+  <input type="text" id="title" name="title" value="{{post.title}}" required>
+
+  <label for="content">Conteúdo: </label>
+  <textarea id="content" name="content" required>
+    {{post.content}}
+  </textarea>
+  <div class="button-group">
+    <button type="submit">Alterar</button>
+    <a href="/"><button type="button">Voltar</button></a>
+  </div>
+</form>
