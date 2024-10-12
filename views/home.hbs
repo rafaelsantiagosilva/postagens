@@ -1,0 +1,17 @@
+<header class="header">
+  <h1>Posts:</h1>
+  <a href="/register">
+    <button>Cadastrar novo post</button>
+  </a>
+</header>
+<main>
+  {{#each posts}}
+    <section class="post">
+      <header class="post-header">
+        <h2 class="post-title">{{title}}</h2>
+      </header>
+      <p class="post-content">{{content}}</p>
+      <a href="/delete/{{id}}"><button class="delete">Deletar</button></a>
+    </section>
+  {{/each}}
+</main>
